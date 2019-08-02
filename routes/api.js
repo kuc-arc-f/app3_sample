@@ -38,7 +38,13 @@ console.log(obj );
 * 
 *********************************/
 router.get('/tasks_show/:id', function(req, res) {
-    models.Task.findOne({id : req.params.id } )
+console.log( req.params.id );
+//     models.Task.findOne({id : req.params.id } )
+    models.Task.findOne({
+        where: {
+        id: req.params.id,
+        }
+    })
     .then((result) => {
         console.log( result );
         var param = {"result": result};
