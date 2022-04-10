@@ -6,6 +6,8 @@
 
  date    : 2019/07/28
 
+ update : 2022/04/10
+ 
 ***
 Vue.js + express + sequelize ,sample
 
